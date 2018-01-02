@@ -1,0 +1,25 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Monoton', cursive;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Global */
+
+/* Nav */
+
+.navbar-default .navbar-nav >.active > a {
+  color: #399db1;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #399db1;
+  font-weight: 700;
+  background-color: none;
+}
+
+body {
+  top: padding-top: 70px;
+}
