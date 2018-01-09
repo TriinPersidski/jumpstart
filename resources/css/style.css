@@ -1,25 +1,139 @@
 html {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Monoton', cursive;
+  font-size: 14px;
   margin: 0 auto;
   padding: 0;
 }
 
 /* Global */
 
+body {
+  top: 70px;
+}
+
 /* Nav */
 
-.navbar-default .navbar-nav >.active > a {
+.navbar-default .navbar-nav .active a {
   color: #399db1;
+  background-color: inherit;
+}
+
+.navbar-default .navbar-nav a {
   font-weight: 700;
 }
 
-.navbar-default .navbar-nav > .active > a:hover {
-  color: #399db1;
-  font-weight: 700;
-  background-color: none;
+.navbar-default .navbar-nav a:hover {
+  color: #399db1;  /* not working */
 }
 
-body {
-  top: padding-top: 70px;
+/* Jumbotron */
+
+.jumbotron.jumbotron-bike {
+  background-image: url('../images/jumbotron-bike.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #399db1;
+}
+
+.jumbotron h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 7.1rem;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+  margin-top: 11.85rem;
+  text-align: center;
+}
+
+.jumbotron p {
+  color: #fff;
+  margin: auto;
+  max-width: 51.3rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  width: 11.428rem;
+  padding: 1.33rem 0;
+  margin-top: 2.8rem;
+
+  border: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: .5s box-shadow;
+}
+.btn-primary a {
+  background-color: #399db1;
+}
+
+.btn-primary a:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary a:active {
+  background-color: #286090;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Featued Projects */
+
+h2 {
+  color: #399db1;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: 1.3rem;
+}
+
+#highlight-headline {
+  color: #399db1;
+}
+
+.catalog li a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.image-container img {
+  opacity: 0.7;
+  width:
+}
+
+/* Help section */
+
+.container-fluid.help {
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.help h1 {
+  font-size: 2.57rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+  margin-top: 5.2rem;
+}
+
+.help p {
+    max-width: 42rem;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.help a {
+  margin-bottom: 5.2rem;
 }
