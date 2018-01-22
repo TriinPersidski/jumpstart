@@ -1,109 +1,44 @@
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Monoton', cursive;
-  font-size: 14px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 /* Global */
+html {
+  font-size: 14px;
+}
 
 body {
-  top: 70px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-  margin-left: 1.66rem;
-  margin-right: 1.66rem;
-  margin: 0 auto;
+h2 {
+  color: #399db1;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
-/* Nav */
+h3 {
+  font-weight: 1.3rem;
+  font-weight: bold;
+}
 
-.navbar-default .navbar-nav .active a {
+img {
+  width: 100%;
+}
+
+/* Bootstrap Overrides */
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
   color: #399db1;
   background-color: inherit;
-}
-
-.navbar-default .navbar-nav a {
-  font-weight: 700;
-}
-
-.navbar-default .navbar-nav a:hover {
-  color: #399db1;  /* not working */
-}
-
-/* Jumbotron */
-
-.jumbotron.jumbotron-bike {
-  background-image: url('../images/jumbotron-bike.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #399db1;
-}
-
-.jumbotron.jumbotron-flowers {
-  background-image: url('../images/jumbotron-flowers.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #399db1;
-}
-
-.jumbotron.jumbotron-beer {
-  background-image: url('../images/jumbotron-beer.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #399db1;
-}
-
-.jumbotron.jumbotron-duffel {
-  background-image: url('../images/jumbotron-duffel.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #399db1;
-}
-
-.jumbotron h1 {
-  font-family: 'Monoton', cursive;
-  font-size: 7.1rem;
-  color: #fff;
-  text-shadow: -1px -1px 0 #000,
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000;
-  margin-top: 11.85rem;
-  text-align: center;
-}
-
-.jumbotron p {
-  color: #fff;
-  margin: 0 auto;
-  max-width: 51.3rem;
-  text-align: center;
-}
-
-.relative-wrapper {
-  display: flex;
-}
-
-.btn {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  margin: 0 auto;
 }
 
 .btn-primary {
   width: 11.428rem;
   padding: 1.33rem 0;
+  border:0;
   margin-top: 2.8rem;
-  border: 0;
+  background-color: #399bd1;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  transition: 500ms 100ms ease;
+  transition: .5s box-shadow;
 }
 
 .btn-primary {
@@ -120,68 +55,134 @@ body {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Slick Overrides */
+
+.slick-slide {
+  outline: none;
+}
+
+/* Nav */
+
+.navbar {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  height: 44rem;
+  padding-top: 10rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #399db1;
+  color: white;
+  text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+}
+
+.jumbotron.background-bike {
+  background-image: url('../images/jumbotron-bike.jpg');
+}
+
+.jumbotron.background-flowers {
+  background-image: url('../images/jumbotron-flowers.jpg');
+}
+
+.jumbotron.background-beer {
+  background-image: url('../images/jumbotron-beer.jpg');
+}
+
+.jumbotron.background-duffel {
+  background-image: url('../images/jumbotron-duffel.jpg');
+}
+
+.jumbotron h1 {
+  font-family: 'Monoton', sans-serif;
+  font-size: 7.1rem;
+}
+
+.jumbotron p {
+  margin: auto;
+  max-width: 51.3rem;
+}
+
+.relative-wrapper {
+  position: relative;
+  top: -16rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+}
 
 /* Featued Projects */
 
-h2 {
-  color: #399db1;
-  font-size: 1.7rem;
-  font-weight: bold;
+.featured-project {
+  margin-top: -7rem; /* To account for relatively positioned button */
 }
 
-.featured-project h2 {
-  margin-left: -1.07rem;
-  margin-right: -1.07rem;
+.featured-project .image-container {
+  height: 19rem;
+  margin-top: 20px; /* To match bootstrap header margins */
 }
 
-h3 {
-  font-weight: 1.3rem;
-}
-
-#highlight-headline {
+.categories h3 {
   color: #399db1;
 }
 
-.catalog li a {
+.categories ul {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
 
-.catalog li a:hover {
+.categories ul a:hover {
   color: rgba(0, 0, 0, 1);
   text-decoration: underline;
 }
+
+/* Project Image Containers */
 
 .image-container {
   overflow: hidden;
 }
 
 .image-container img {
-  width: 100%;
-  margin-top: 1.43rem;
   opacity: 0.7;
   transition: transform 0.5s, opacity 0.5s;
 }
 
 .image-container img:hover {
   opacity: 1;
-  transform: scale(1.5);
-  overflow: hidden;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 /* Projects section */
 
 
-#projects .project {
+.project {
   margin-bottom: 5.85rem;
 }
 
 .project .image-container {
   height: 13.5rem;
-}
-
-#projects img {
-  width: 100%;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -192,24 +193,27 @@ h3 {
 
 /* Help section */
 
-.container-fluid.help {
+.help {
+  padding: 5.2rem 0;
   text-align: center;
   background-color: #f3f3f3;
 }
 
-.help h1 {
+.help strong {
   font-size: 2.57rem;
   font-weight: bold;
   margin-bottom: 1.4rem;
-  margin-top: 5.2rem;
+  display: inline-block;
 }
 
 .help p {
     max-width: 42rem;
     margin: auto;
-    margin-bottom: 0;
 }
 
-.help a {
-  margin-bottom: 5.2rem;
+/* Footer */
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
